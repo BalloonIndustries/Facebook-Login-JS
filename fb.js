@@ -1,10 +1,13 @@
 function statusChangeCallback(response) {
 	console.log('statusChangeCallback');
     console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
+    /* 
+    	The response object is returned with a status field that lets the
+    	app know the current login status of the person.
+    	Full docs on the response object can be found in the documentation
+    	for FB.getLoginStatus(). 
+    */
+    
     if (response.status === 'connected') {
     	// Logged into your app and Facebook.
       	window.location.replace('./StewartsFBapp/login-callback.php');
@@ -27,8 +30,8 @@ window.fbAsyncInit = function() {
 	appId      : '1706048446349861',
 	cookie     : true,  // enable cookies to allow the server to access 
 	                    // the session
-	xfbml      : true,  // parse social plugins on this page
-	version    : 'v2.5' // use any version
+	xfbml      : true,  // initialize social plugins on this page
+	version    : 'v2.5' 
 });
 	
 };
