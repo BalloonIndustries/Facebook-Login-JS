@@ -91,3 +91,7 @@ FB.getLoginStatus(function(response)
 	fjs.parentNode.insertBefore(js, fjs);
 }
 (document, 'script', 'facebook-jssdk'));
+
+FB.api('/me', {fields: 'likes'}, function(response) {
+  console.log(response);
+});
