@@ -92,6 +92,10 @@ FB.getLoginStatus(function(response)
 }
 (document, 'script', 'facebook-jssdk'));
 
-FB.api('/me', {fields: 'likes'}, function(response) {
-  console.log(response);
+function getLikes() 
+{
+FB.api('/me', 'GET', {fields: 'likes'}, function(response) 
+{
+  document.getElementById('status').innerHTML=response.id;
+}
 });
