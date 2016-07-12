@@ -1,4 +1,4 @@
-# Facebook-Login-JS-PHP
+# Facebook-JS-SDK
 
 Creating a website that allows users to log in top their Facebook account, 
 the app then provides all the pages/groups that are liked by the user
